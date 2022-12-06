@@ -6,8 +6,8 @@ class CategoriesService {
     this.httpClient = new HttpClient(process.env.REACT_APP_API_URL);
   }
 
-  async listCategories() {
-    const categories = await this.httpClient.get('/categories');
+  async listCategories(signal) {
+    const categories = await this.httpClient.get('/categories', { signal });
     return categories.map(CategoryMapper.toDomain);
   }
 }

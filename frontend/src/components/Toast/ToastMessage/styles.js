@@ -47,7 +47,7 @@ export const Container = styled.div`
   border-radius: 4px;
   cursor: pointer;
   box-shadow: 0 20px 20px -16px rgba(0, 0, 0, 0.25);
-  animation: ${messageIn} 0.3s;
+  animation: ${messageIn} 0.3s forwards;
 
   ${({ isLeaving }) => isLeaving && css`
     animation: ${messageOut} 0.3s forwards;

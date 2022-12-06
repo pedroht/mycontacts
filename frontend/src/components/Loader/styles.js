@@ -21,10 +21,10 @@ export const Overlay = styled.div`
   align-items: center;
   background: rgba(246, 245, 252, 0.7);
   backdrop-filter: blur(3px);
-  animation: ${fadeIn} 0.3s;
+  animation: ${fadeIn} 0.3s forwards;
 
   ${({ isLeaving }) => isLeaving && css`
-    animation: ${fadeOut} 0.3s;
+    animation: ${fadeOut} 0.3s forwards;
   `}
 
 
